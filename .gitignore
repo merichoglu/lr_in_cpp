@@ -1,0 +1,40 @@
+# build artifacts
+/build/
+/build-*/
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+
+# executables / binaries
+*.exe
+*.out
+*.app
+*.o
+*.obj
+*.a
+*.so
+*.dylib
+*.dll
+
+# IDE / editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*.user
+*.workspace
+*.code-workspace
+
+# macOS metadata
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Logs / temp
+*.log
+*.tmp
+*.temp
+
+# Generated data
+/data/processed/
