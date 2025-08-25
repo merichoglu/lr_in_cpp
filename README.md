@@ -1,4 +1,4 @@
-#  Linear Regression from Scratch (C++)
+# Linear Regression from Scratch (C++)
 
 This project implements **Linear Regression** using three different solvers:
 
@@ -12,7 +12,7 @@ The code leverages the **Eigen** library for efficient linear algebra operations
 
 ## 📁 Project Structure
 
-\`\`\`bash
+```bash
 linear-regression-cpp/
 ├── build/
 ├── data/
@@ -31,11 +31,11 @@ linear-regression-cpp/
 ├── main.cpp
 ├── CMakeLists.txt
 └── README.md
-\`\`\`
+```
 
 ---
 
-## 🛠️ Build & Run
+## Build & Run
 
 To build and run the demo, follow these steps in your terminal:
 
@@ -47,9 +47,10 @@ make
 \`\`\`
 
 ---
-## 📈 Results
 
-### 🔬 Synthetic Data Demo
+## Results
+
+### Synthetic Data Demo
 
 The model successfully recovered the true coefficients from the synthetic data. The results show that all three solvers produce very similar, accurate outputs.
 
@@ -62,6 +63,7 @@ The model successfully recovered the true coefficients from the synthetic data. 
 | **Gradient Descent** | `[2.962, 1.993, -0.995]`     | `4.987`     | `0.4726`    | `0.9873`  |
 
 ---
+
 ### Regularization Demo
 
 Increasing the L2 penalty correctly shrinks the coefficient norms, as expected in Ridge Regression.
@@ -90,4 +92,3 @@ This real-world dataset highlights the limitations of a simple linear model.
 | **Gradient Descent** | `415.36`     | `409.95`    | `0.2009`  |
 
 **Note:** The low R² value of approximately `0.20` indicates that the dataset is noisy and not well-suited for a linear regression model.
-
