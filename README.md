@@ -39,12 +39,12 @@ linear-regression-cpp/
 
 To build and run the demo, follow these steps in your terminal:
 
-\`\`\`bash
+```bash
 mkdir build && cd build
 cmake ..
 make
 ./linear_regression
-\`\`\`
+```
 
 ---
 
@@ -90,5 +90,3 @@ This real-world dataset highlights the limitations of a simple linear model.
 | **Normal Equation** | `415.35`     | `410.12`    | `0.2002`  |
 | **Ridge Regression** | `415.35`     | `410.12`    | `0.2003`  |
 | **Gradient Descent** | `415.36`     | `409.95`    | `0.2009`  |
-
-**Note:** The low R² value of approximately `0.20` indicates that the dataset is noisy and not well-suited for a linear regression model.
