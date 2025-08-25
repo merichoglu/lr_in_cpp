@@ -94,6 +94,18 @@ namespace lr {
             y(i) = rows[static_cast<std::size_t>(i)]
                        [static_cast<std::size_t>(n_cols - 1)];
         }
+
+        for (Eigen::Index j = 0; j < X.cols(); ++j) {
+            double mean = X.col(j).mean();
+            double sq_sum = (X.col(j).array() - mean).square().sum();
+            double stddev = std::sqrt(sq_sum / static_cast<double>(n_rows));
+
+            if (stddev > 1e-12) { // avoid division by zero
+                X.col(j) = (X.col(j).array() - mean) / stddev;
+            } else {
+                X.col(j).array() -= mean; // just mean-center
+            }
+        }
     }
 
     void train_test_split(const Eigen::MatrixXd& X,
